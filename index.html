@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>3D-ShopCard</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="sneaker">
+                <div class="circle"></div>
+                <img src="./textures/popsickle_nobg.png" alt="shoe" />
+            </div>
+            <div class="info">
+                <h1 class="title">Scrumptious Popsickle</h1>
+                <h3 class='description'>WOULD YOU SELL YOUR FIRST BORN FOR THIS SCRUMPTIOUS POPSICKLE?</h3>
+                <div id="sizes" class="sizes">
+                    <button class="btn">1 box</button>
+                    <button class="btn active">2 boxes</button>
+                    <button class="btn">3 boxes</button>
+                    <button class="btn">4 boxes</button>
+                </div>
+                <div class="purchase">
+                    <button>Add to cart</button>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+<footer style="text-align: center;"><a target="_blank"href='https://nolant.org'style="color: black; text-decoration: none;">Nolan Taft - 2021</a></footer>
+
+</html>
+<script>
+    var btnContainer = document.getElementById("sizes");
+
+    // Get all buttons with class="btn" inside the container
+    var btns = btnContainer.getElementsByClassName("btn");
+
+    // Loop through the buttons and add the active class to the current/clicked button
+    for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function () {
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
+        });
+    }
+</script>
