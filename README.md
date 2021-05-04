@@ -7,8 +7,9 @@ This is intended as an optional store front panel with full customization and in
 1. Simple! Make sure you have [GIT](https://git-scm.com/downloads) installed.
 2. Create an empty file and name it '3d-shop-front'
 3. Open the folder and open a terminal to that directory
+4. type
 ```bash
-#4. type 'git clone https://github.com/dev-nolant/3d-shop-front.git'
+git clone https://github.com/dev-nolant/3d-shop-front.git
 ```
 5. Presto! You've downloaded this repo successfully.
 Now you're ready to modify as needed!
